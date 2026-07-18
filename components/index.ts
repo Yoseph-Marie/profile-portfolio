@@ -1,0 +1,12 @@
+export { default as Navigation } from "./navigation";
+export { default as Hero } from "./hero";
+export { default as About } from "./about";
+export { default as Experience } from "./experience";
+export { default as Projects } from "./projects";
+export { default as Skills } from "./skills";
+export { default as Publication } from "./publication";
+export { default as Education } from "./education";
+export { default as Certifications } from "./certifications";
+export { default as Contact } from "./contact";
+export { default as Footer } from "./footer";
+export { default as ResumeDownload } from "./ResumeDownload.tsx";
