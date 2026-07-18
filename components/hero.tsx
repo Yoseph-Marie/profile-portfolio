@@ -22,7 +22,7 @@ export default function Hero() {
         <div className="flex flex-col gap-6 mb-12 items-center">
           <div className="animate-fade-in-up">
             <span className="text-xl sm:text-2xl lg:text-4xl font-bold bg-primary/10 text-primary px-8 py-3 rounded-2xl border border-primary/20 backdrop-blur-md inline-block">
-              Chief Technology Officer (CTO)  For Network & Security Engineerind Dep't
+              Chief Technology Officer (CTO)  For Network & Security Engineering Dep't
             </span>
           </div>
         </div>
