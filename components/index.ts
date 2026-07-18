@@ -9,4 +9,4 @@ export { default as Education } from "./education";
 export { default as Certifications } from "./certifications";
 export { default as Contact } from "./contact";
 export { default as Footer } from "./footer";
-export { default as ResumeDownload } from "./ResumeDownload.tsx";
+export { default as ResumeDownload } from "./ResumeDownload";
