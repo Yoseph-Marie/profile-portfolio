@@ -175,7 +175,7 @@ export default function Publication() {
                         </p>
 
                         <Link
-                            href={withBasePath("/docs/Backend_API_Hardening_Standards.pdf")}
+                            href={withBasePath("/Yoseph_Marie_CV.pdf")}
                             target="_blank"
                             className="w-full inline-flex items-center justify-center gap-2 px-6 py-3 rounded-xl bg-card border border-border hover:border-accent/50 hover:bg-accent/5 transition-all group-hover:shadow-lg group-hover:shadow-accent/10"
                         >
