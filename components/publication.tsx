@@ -1,5 +1,6 @@
 import Link from "next/link"
 import { FileText, Download, ExternalLink, BookOpen } from "lucide-react"
+import { withBasePath } from "../lib/utils"
 
 export default function Publication() {
     return (
@@ -52,7 +53,7 @@ export default function Publication() {
 
                                 <div className="flex flex-wrap gap-4 pt-4">
                                     <Link
-                                        href="/thesis/engineering-network-thesis.pdf"
+                                        href={withBasePath("/thesis/engineering-network-thesis.pdf")}
                                         target="_blank"
                                         className="inline-flex items-center justify-center gap-2 px-6 py-3 rounded-xl bg-primary text-primary-foreground font-medium hover:bg-primary/90 transition-all shadow-lg shadow-primary/25 hover:shadow-primary/40 hover:-translate-y-0.5"
                                     >
@@ -174,7 +175,7 @@ export default function Publication() {
                         </p>
 
                         <Link
-                            href="/docs/Backend_API_Hardening_Standards.pdf"
+                            href={withBasePath("/docs/Backend_API_Hardening_Standards.pdf")}
                             target="_blank"
                             className="w-full inline-flex items-center justify-center gap-2 px-6 py-3 rounded-xl bg-card border border-border hover:border-accent/50 hover:bg-accent/5 transition-all group-hover:shadow-lg group-hover:shadow-accent/10"
                         >

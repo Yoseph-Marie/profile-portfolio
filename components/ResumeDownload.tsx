@@ -2,6 +2,7 @@
 
 import { useState } from "react"
 import { Download, FileText, Check, ArrowRight } from "lucide-react"
+import { withBasePath } from "../lib/utils"
 
 export default function ResumeDownload() {
   const [downloadedFormat, setDownloadedFormat] = useState<string | null>(null)
@@ -39,7 +40,7 @@ export default function ResumeDownload() {
             
             {/* Primary Action: Functional PDF Anchor Download Link */}
             <a
-              href="/Yoseph_Marie_CV.pdf"
+              href={withBasePath("/Yoseph_Marie_CV.pdf")}
               download="Yoseph_Marie_CV.pdf"
               onClick={() => handleDownloadTrigger("PDF")}
               className="flex-1 flex items-center justify-between gap-3 px-5 py-3.5 bg-accent hover:bg-accent/90 text-accent-foreground font-medium rounded-lg transition-all duration-200 group shadow-sm active:scale-[0.98] text-center decoration-transparent"
@@ -60,7 +61,7 @@ export default function ResumeDownload() {
 
             {/* Secondary Action: Functional DOCX Alternative Anchor Link */}
             <a
-              href="/Yoseph_Marie_CV.docx"
+              href={withBasePath("/Yoseph_Marie_CV.docx")}
               download="Yoseph_Marie_CV.docx"
               onClick={() => handleDownloadTrigger("DOCX")}
               className="flex items-center justify-center gap-2 px-4 py-3.5 border border-border bg-background/60 hover:bg-muted/50 text-foreground font-medium text-sm rounded-lg transition-colors duration-200 active:scale-[0.98] font-mono text-xs opacity-80 decoration-transparent"
