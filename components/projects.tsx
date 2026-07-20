@@ -12,7 +12,7 @@ const projects = [
       "Implemented high-availability perimeter security, zero-trust client routing, and data center delivery engines to achieve automated disaster recovery readiness.",
     tags: ["FortiGate NGFW", "FortiEMS (ZTNA)", "FortiADC", "Arista SDN", "Disaster Recovery"],
     period: "Nov 2025 - Present",
-    image: withBasePath("/personalportfolio/ethswitch-dr.png"),
+    image: withBasePath("./personalportfolio/ethswitch-dr.png"),
     details: {
       overview:
         "Led network security deployment for EthSwitch S.C.'s mission-critical Disaster Recovery (DR) data center loop. Focused on establishing zero-trust endpoint entry points, application balancing, and automated SDN fabrics.",
