@@ -30,7 +30,7 @@ export default function Navigation() {
             {/* Circular Profile Photo Container */}
             <div className="relative w-9 h-9 rounded-full overflow-hidden border border-border bg-muted/20 flex-shrink-0">
               <Image
-                src="/personalportfolio/YosephMarie.jpg"
+                src="personalportfolio/YosephMarie.jpg"
                 alt="Yoseph Marie Profile"
                 fill
                 className="object-cover"
