@@ -127,7 +127,7 @@ const projects = [
       "Migrated legacy filtering arrays onto updated firewall policies to secure newly deployed Hyperconverged Infrastructure.",
     tags: ["FortiGate NGFW", "Policy Migration", "HCI Security", "Access Control"],
     period: "Jan 2025 - Feb 2025",
-    image: "personalportfolio/FortiGate.png",
+    image: withBasePath("/personalportfolio/FortiGate.png"),
     details: {
       overview:
         "Provided dedicated security integration for NIB Bank's core Hyperconverged Infrastructure (HCI) and data preservation environment. Streamlined old security rules into clean, low-latency inspection structures.",
@@ -145,7 +145,7 @@ const projects = [
         "Secured critical host replication segments against external application-layer injection threats.",
         "Delivered production deployment documentation highlighting structural configurations and failover paths."
       ],
-      screenshots: ["personalportfolio/FG.png"]
+      screenshots: [withBasePath("/personalportfolio/FG.png")]
     }
   },
   {
@@ -182,7 +182,7 @@ const projects = [
       "Designed and deployed enterprise security zones to isolate internal banking resources across multiple branches.",
     tags: ["FortiGate NGFW", "Security Assessments", "Access Controls", "Network Segmentation"],
     period: "Feb 2024 - Jul 2024",
-    image: "personalportfolio/FortiGate.png",
+    image: withBasePath("/personalportfolio/FortiGate.png"),
     details: {
       overview:
         "Designed and implemented perimeter network security lines for Sidama Bank S.C. Developed granular security models to protect core processing applications from standard user networks.",
@@ -200,7 +200,7 @@ const projects = [
         "Built complete architectural visibility structures, highlighting traffic flows across external nodes.",
         "Delivered complete post-deployment runbooks to help internal IT teams manage day-to-day policy additions."
       ],
-      screenshots: ["personalportfolio/FG.png"]
+      screenshots: [withBasePath("/personalportfolio/FG.png")]
     }
   },
   {
