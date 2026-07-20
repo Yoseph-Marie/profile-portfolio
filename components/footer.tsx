@@ -1,5 +1,6 @@
 import Link from "next/link"
 import { Mail } from "lucide-react"
+import { withBasePath } from "../lib/utils"
 
 export default function Footer() {
   const currentYear = new Date().getFullYear()
@@ -76,7 +77,7 @@ export default function Footer() {
           <div className="flex flex-col md:flex-row items-center gap-4 text-sm text-muted-foreground">
             <p>© {currentYear} Yoseph Marie Mengistu. All rights reserved.</p>
             <span className="hidden md:inline text-border">|</span>
-            <Link href="/LICENSE.txt" target="_blank" className="hover:text-primary transition-colors">
+            <Link href={withBasePath("/LICENSE.txt")} target="_blank" className="hover:text-primary transition-colors">
               MIT License
             </Link>
           </div>

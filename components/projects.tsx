@@ -3,6 +3,7 @@
 import { useState } from "react"
 import Image from "next/image"
 import { X } from "lucide-react"
+import { withBasePath } from "../lib/utils"
 
 const projects = [
   {
@@ -11,7 +12,7 @@ const projects = [
       "Implemented high-availability perimeter security, zero-trust client routing, and data center delivery engines to achieve automated disaster recovery readiness.",
     tags: ["FortiGate NGFW", "FortiEMS (ZTNA)", "FortiADC", "Arista SDN", "Disaster Recovery"],
     period: "Nov 2025 - Present",
-    image: "/personalportfolio/ethswitch-dr.png",
+    image: withBasePath("/personalportfolio/ethswitch-dr.png"),
     details: {
       overview:
         "Led network security deployment for EthSwitch S.C.'s mission-critical Disaster Recovery (DR) data center loop. Focused on establishing zero-trust endpoint entry points, application balancing, and automated SDN fabrics.",
@@ -32,7 +33,7 @@ const projects = [
         "Enforced granular access control policies across all remote corporate devices accessing the DR core.",
         "Authored complete operational deployment runbooks and engineering technical handoff documents."
       ],
-      screenshots: ["/personalportfolio/ztna.png"]
+      screenshots: [withBasePath("/personalportfolio/ztna.png")]
     }
   },
   {
@@ -41,7 +42,7 @@ const projects = [
       "Engineered a centralized security information monitoring infrastructure to ingest, parse, and correlate distributed event telemetry.",
     tags: ["FortiSIEM", "Log Collection", "Event Correlation", "Threat Auditing"],
     period: "Feb 2026 - Apr 2026",
-    image: "/personalportfolio/FortiSIEM.png",
+    image: withBasePath("/personalportfolio/FortiSIEM.png"),
     details: {
       overview:
         "Maintained and optimized the security logging architecture for Addis Bank S.C. Implemented multi-tier collection fabrics using collectors, workers, and supervisory engines to guarantee visibility across distributed systems.",
@@ -59,7 +60,7 @@ const projects = [
         "Resolved intermittent connection bottlenecks between branch collectors and the core supervisor node.",
         "Delivered end-to-end technical knowledge transfer seminars directly to the bank's internal SOC division."
       ],
-      screenshots: ["personalportfolio/FortiSIEM.png"]
+      screenshots: [withBasePath("/personalportfolio/FortiSIEM.png")]
     }
   },
   {
@@ -68,7 +69,7 @@ const projects = [
       "Unified compute blade pools, automated network fabrics, and clustered enterprise arrays into a resilient multi-tenant campus cloud platform.",
     tags: ["Cisco Nexus", "Cisco UCS Manager", "NetApp Storage", "VMware ESXi", "FlexPod Cloud"],
     period: "Dec 2025 - May 2026",
-    image: "personalportfolio/FlexPod.png",
+    image: withBasePath("/personalportfolio/FlexPod.png"),
     details: {
       overview:
         "Executed data center engineering routines to maintain Bahir Dar University's private cloud infrastructure. Orchestrated raw hardware compute layers with high-capacity storage clusters using bare-metal virtualization panels.",
@@ -88,7 +89,7 @@ const projects = [
         "Isolated core administrative databases from public academic user segments using logical firewall partitioning.",
         "Created infrastructure maintenance guides covering storage replication and physical blade diagnostic maps."
       ],
-      screenshots: ["personalportfolio/VMflexPod.png"]
+      screenshots: [withBasePath("/personalportfolio/VMflexPod.png")]
     }
   },
   {
@@ -97,7 +98,7 @@ const projects = [
       "Architected a comprehensive security perimeter overhaul, unifying web application defense, endpoint control, and central incident tracking.",
     tags: ["FortiGate NGFW", "FortiWeb WAF", "FortiNAC", "FortiManager", "Data Center Modernization"],
     period: "Dec 2024 - Sep 2025",
-    image: "personalportfolio/FortiFabric.png",
+    image: withBasePath("/personalportfolio/FortiFabric.png"),
     details: {
       overview:
         "Modernized the active financial network edge for Premier Switch Solutions (PSS). Developed a multi-layered defence system separating third-party transaction pathways from core internal banking databases.",
@@ -117,7 +118,7 @@ const projects = [
         "Achieved absolute compliance with internal audit security benchmarks for active financial switches.",
         "Delivered deep technical workshops for internal specialists covering emergency firewall recovery routines."
       ],
-      screenshots: ["personalportfolio/FortinetFabric.png"]
+      screenshots: [withBasePath("/personalportfolio/FortinetFabric.png")]
     }
   },
   {
@@ -153,7 +154,7 @@ const projects = [
       "Provisioned specialized payment processing cryptographic hardware to isolate master keys and validate card clearance cycles.",
     tags: ["Thales payShield", "Hardware Security Module", "TMD Configuration", "Financial Cryptography"],
     period: "Jun 2024 - Apr 2025",
-    image: "personalportfolio/PayshieldM.png",
+    image: withBasePath("/personalportfolio/PayshieldM.png"),
     details: {
       overview:
         "Deployed the core cryptographic security anchor for Abay Bank's clearing platform. Configured hardware security modules (HSM) to safely execute real-time transaction validation, PIN translation, and card verification loops.",
@@ -172,7 +173,7 @@ const projects = [
         "Built a resilient, high-availability twin-chassis module layout to ensure continuous automated system uptime.",
         "Conducted structured training workshops for internal engineering leads covering master key loading routines."
       ],
-      screenshots: ["personalportfolio/HSM.png"]
+      screenshots: [withBasePath("/personalportfolio/HSM.png")]
     }
   },
   {
@@ -208,7 +209,7 @@ const projects = [
       "Hardened corporate web proxy platforms to enforce strict content filtering, data loss prevention, and secure video collaboration spaces.",
     tags: ["Web Security Appliance", "Security Hardening", "Disaster Recovery", "Content Filtering"],
     period: "Sep 2023 - Aug 2024",
-    image: "personalportfolio/WSA.png",
+    image: withBasePath("/personalportfolio/WSA.png"),
     details: {
       overview:
         "Secured outbound web traffic channels and remote web services for the Ethiopian Agricultural Transformation Agency (ATA). Implemented robust filtering proxies to safeguard core disaster recovery portals.",
@@ -226,7 +227,7 @@ const projects = [
         "Ensured secure video link channels for remote organizational coordination during disaster recovery tests.",
         "Authored step-by-step user administration guides and technical configuration reference maps."
       ],
-      screenshots: ["personalportfolio/WSAConfig.png"]
+      screenshots: [withBasePath("/personalportfolio/WSAConfig.png")]
     }
   },
   {
@@ -235,7 +236,7 @@ const projects = [
       "Built a unified telemetry monitoring center to capture real-time performance metrics, network configs, and bandwidth utilization profiles.",
     tags: ["SolarWinds NPM", "SolarWinds NCM", "Bandwidth Analytics (NTA)", "SAM", "IPAM Platform"],
     period: "Aug 2023 - Dec 2024",
-    image: "personalportfolio/SolarWinds.png",
+    image: withBasePath("/personalportfolio/SolarWinds.png"),
     details: {
       overview:
         "Engineered an enterprise-wide network orchestration and infrastructure tracking system for Awash Insurance Company S.C. Unified tracking across distributed branch networks into a single dashboard.",
@@ -254,7 +255,7 @@ const projects = [
         "Automated device configuration backup tasks across all core enterprise routers and distribution switches.",
         "Delivered complete dashboard operational runbooks directly to the internal network administration teams."
       ],
-      screenshots: ["personalportfolio/SolarWindsNPM.png"]
+      screenshots: [withBasePath("/personalportfolio/SolarWindsNPM.png")]
     }
   },
   {
@@ -263,7 +264,7 @@ const projects = [
       "Provisioned unified firewall protection layers to safeguard multi-tenant microfinance core banking platforms hosted inside central data spaces.",
     tags: ["Cisco FTD", "Firepower Management (FMC)", "Data Center Hosting", "Multi-Tenant Security"],
     period: "Jun 2023 - Sep 2024",
-    image: "personalportfolio/FTD.png",
+    image: withBasePath("/personalportfolio/FTD.png"),
     details: {
       overview:
         "Provided advanced implementation support for the Association of Ethiopian Microfinance Institutions (AEMFI) data center hosting platform. Managed security policies to protect critical shared accounting engines.",
@@ -281,7 +282,7 @@ const projects = [
         "Streamlined edge routing definitions by grouping tenant access rules into clear, distinct policy layers.",
         "Produced comprehensive data center implementation maps and step-by-step troubleshooting guides."
       ],
-      screenshots: ["personalportfolio/FMC.png"]
+      screenshots: [withBasePath("/personalportfolio/FMC.png")]
     }
   }
 ]
