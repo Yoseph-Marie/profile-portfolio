@@ -310,13 +310,7 @@ export default function Projects() {
                 {/* Safely clean and validate the main project image path */}
                 {(() => {
                   let mainSrc = project.image && project.image.trim() !== "" ? project.image.trim() : "/placeholder.svg";
-
-                  if (mainSrc === "/placeholder.svg") {
-                    mainSrc = "/placeholder.svg";
-                  } else if (!mainSrc.startsWith("http") && !mainSrc.startsWith("/")) {
-                    mainSrc = `/${mainSrc}`;
-                  }
-
+                  
                   return (
                     <Image
                       src={mainSrc}
@@ -438,10 +432,6 @@ export default function Projects() {
                   <div className="grid grid-cols-1 gap-2">
                     {selectedProject.details.screenshots.map((src, i) => {
                       let cleanedSrc = src && src.trim() !== "" ? src.trim() : "/placeholder.svg";
-
-                      if (cleanedSrc !== "/placeholder.svg" && !cleanedSrc.startsWith("http") && !cleanedSrc.startsWith("/")) {
-                        cleanedSrc = `/${cleanedSrc}`;
-                      }
 
                       return (
                         <div key={i} className="relative h-28 rounded overflow-hidden border border-border bg-muted/20">
