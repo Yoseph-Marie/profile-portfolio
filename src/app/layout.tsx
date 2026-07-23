@@ -17,7 +17,7 @@ export const metadata: Metadata = {
   title: "Yoseph Mare | Cyber Security Engineer",
   description: "Personal Portfolio",
   icons: {
-    icon: "/favicon.ico",
+    icon: "/personalportfolio/YosephMarie.jpg",
   },
 };
 
